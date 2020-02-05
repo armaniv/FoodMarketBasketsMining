@@ -1,0 +1,34 @@
+#Saved ELKI settings. First line is title, remaining lines are parameters.
+test
+de.lmu.ifi.dbs.elki.application.KDDCLIApplication
+-verbose
+-verbose
+-db
+HashmapDatabase
+-dbc.in
+/home/nepotu/projects/dataMining/basket_scores.csv
+-db.index
+tree.metrical.covertree.SimplifiedCoverTree$Factory
+-covertree.distancefunction
+minkowski.EuclideanDistanceFunction
+-algorithm
+clustering.DBSCAN
+-dbscan.epsilon
+1.0E-5
+-dbscan.minpts
+100
+
+[Saved Settings]
+de.lmu.ifi.dbs.elki.application.KDDCLIApplication
+-dbc.in
+/home/nepotu/projects/dataMiningProject/data/basket_scores500000.csv
+-db.index
+tree.spatial.kd.MinimalisticMemoryKDTree$Factory
+-time
+-algorithm
+clustering.DBSCAN
+-dbscan.epsilon
+0.1
+-dbscan.minpts
+5000
+
