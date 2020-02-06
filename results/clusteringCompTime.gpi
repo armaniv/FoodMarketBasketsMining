@@ -1,0 +1,12 @@
+set title "Clustering computation time"
+
+set datafile separator ","
+
+set xlabel 'Number of baskets'
+set ylabel 'Time (sec)'
+set format x '%.s%c'
+
+set term pngcairo
+set output "clusteringCompTime.png"
+
+plot "CompTimeResults.csv" u 1:3 w l lc 'blue' lw 2 title ''

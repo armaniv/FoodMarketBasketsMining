@@ -1,0 +1,12 @@
+set title "Basket scores computation time"
+
+set datafile separator ","
+
+set xlabel 'Number of baskets'
+set ylabel 'Time (sec)'
+set format x '%.s%c'
+
+set term pngcairo
+set output "basketScoresCompTime.png"
+
+plot "CompTimeResults.csv" u 1:2 w l lc 'blue' lw 2 title ''
